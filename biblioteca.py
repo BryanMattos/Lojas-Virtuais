@@ -88,20 +88,3 @@ class biblioteca:
         def __call__(self):
             return self.__dict__
 
-
-#=======================Area de teste=========================#
-livro1=biblioteca.livro()
-estante=biblioteca.estante()
-livro1.cadastrar("Minecraft",código="#i98$l")
-print(livro1())
-print(livro1.título)
-
-livro2=biblioteca.livro()
-estante=biblioteca.estante()
-livro2.cadastrar("Jazzghost",código="#i99$l")
-print(livro2())
-print(livro2.título)
-
-estante.alocar_livros(livro1.código,livro2.código)
-
-print(estante())
