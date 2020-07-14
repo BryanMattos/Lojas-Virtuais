@@ -20,12 +20,13 @@ class biblioteca:
             self.altura_do_livro = None
             self.profundidade_do_livro = None
             self.código = None
-
+            self.preço = None
+            
         def cadastrar (self,título=None,subtítulo=None,capítulos=None,páginas=None,
         editora=None,nome_do_autor=None,data_de_publicação=None,estrangeiro=None,
         edição=None,classificação_etária=None,dipónivel=None,título_oiginal=None,
         revisão=None,capa=None,largura_do_livro=None,altura_do_livro = None,
-        profundidade_do_livro=None, código=None): 
+        profundidade_do_livro=None, código=None, preço = None): 
             self.título = título 
             self.subtítulo = subtítulo
             self.capítulos = capítulos
@@ -44,6 +45,7 @@ class biblioteca:
             self.altura_do_livro = altura_do_livro 
             self.profundidade_do_livro = profundidade_do_livro
             self.código = código
+            self.preço = preço
 
         def cod (self): 
             return self.código
